@@ -41,6 +41,9 @@ AI tools were used as a learning assistant to:
 
 ### Description
 
+I chose Debian for this project because it is stable, lightweight, and well suited for server environments. Debian prioritizes reliability over frequent updates, which makes it ideal for a system administration project focused on security and consistency. Its clear documentation and simplicity also make it easier to understand and control the system configuration without unnecessary complexity.
+
+
 **Debian vs Rocky Linux**
 - Debian focuses on stability and simplicity.
 - Rocky Linux is more enterprise-oriented and closer to Red Hat systems.
@@ -60,3 +63,18 @@ AI tools were used as a learning assistant to:
 - VirtualBox is widely used and officially supported at 42.
 - UTM is optimized for macOS and Apple Silicon.
 - VirtualBox offers more mature and flexible VM management features.
+
+
+## Main Design Choices
+
+- **Partitioning:**  
+  LVM was used to allow flexible disk management and easier resizing of partitions if needed.
+
+- **Security Policies:**  
+  Strong password policies were enforced, sudo access was restricted and logged, SSH access was secured, and AppArmor was enabled to add an extra layer of system protection.
+
+- **User Management:**  
+  A non-root user was created and assigned to specific groups. Direct root login was disabled to reduce security risks.
+
+- **Services Installed:**  
+  Only essential services were installed, mainly SSH for remote access, in order to keep the system minimal and secure.
