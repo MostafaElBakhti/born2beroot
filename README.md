@@ -54,14 +54,13 @@ I chose **Debian** because it is stable, lightweight, and well-suited for server
 - Strong password policies (expiration, complexity, reuse prevention)
 - Restricted and logged sudo access
 - Secured SSH (no root login, custom port)
-- Enabled AppArmor for mandatory access control
 
 **User Management:**
 - Created non-root user with specific group assignments
 - Disabled direct root login
 
 **Services Installed:**
-- SSH for remote access
+- SSH for remote access ufw sudo pam.d cron 
 - Minimal services to keep the system secure and lightweight
 
 ### System Comparisons
@@ -85,3 +84,5 @@ I chose **Debian** because it is stable, lightweight, and well-suited for server
 - **VirtualBox:** Cross-platform, widely used, officially supported at 42.
 - **UTM:** Optimized for macOS and Apple Silicon.
 - **Choice:** VirtualBox is more mature and flexible.
+
+# proc/cons 
