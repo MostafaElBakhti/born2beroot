@@ -231,7 +231,6 @@ This monitoring solution provides administrators with continuous visibility into
 
 #### AppArmor vs SELinux
 
-Both are Mandatory Access Control (MAC) systems that restrict program capabilities beyond traditional Unix permissions.
 
 | Feature | AppArmor (Debian Default) | SELinux (Rocky/RHEL Default) |
 |---------|---------------------------|------------------------------|
@@ -244,8 +243,6 @@ Both are Mandatory Access Control (MAC) systems that restrict program capabiliti
 ---
 
 #### UFW vs firewalld
-
-Both manage the underlying `iptables`/`nftables` firewall, but with different interfaces.
 
 | Feature | UFW (Used in this project) | firewalld |
 |---------|----------------------------|-----------|
