@@ -62,7 +62,7 @@ This project serves as a foundation for understanding how production servers are
    
    View monitoring script output:
    ```bash
-   sudo /usr/local/bin/monitoring.sh
+   sudo home/monitoring.sh
    ```
 
 ### Key System Details
@@ -77,7 +77,7 @@ This project serves as a foundation for understanding how production servers are
 ### Documentation & References
 
 - **Official Debian Documentation** – [https://www.debian.org/doc/](https://www.debian.org/doc/)
-- **Born2BeRoot Guide (GitBook)** – Comprehensive project walkthrough
+- **Born2BeRoot Guide (GitBook)** – [https://noreply.gitbook.io/born2beroot](https://noreply.gitbook.io/born2beroot)
 
 
 ### AI Usage
@@ -99,7 +99,7 @@ AI tools were used strategically throughout this project to enhance learning and
 
 ### Operating System Choice: Debian
 
-For this project, I chose **Debian 12** as the operating system for several compelling reasons:
+For this project, I chose **Debian** as the operating system for several compelling reasons:
 
 **Why Debian?**
 - **Stability:** Debian is renowned for its rock-solid stability, making it perfect for learning system administration without unexpected issues
@@ -228,6 +228,17 @@ This monitoring solution provides administrators with continuous visibility into
 ---
 
 ### System Comparisons
+
+#### Debian vs Rocky Linux
+
+| Feature | Debian | Rocky Linux |
+|---------|---------|--------------|
+| **Base** | Independent distribution | RHEL clone (community-driven) |
+| **Package Manager** | APT (`apt`, `dpkg`) | DNF/YUM (`dnf`, `rpm`) |
+| **Release Cycle** | ~2 years (Stable) | ~6 months (follows RHEL) |
+| **Default Security** | AppArmor | SELinux |
+| **Philosophy** | Stability | Enterprise compatibility |
+| **Use Case** | Servers, desktops, flexibility | Enterprise servers, RHEL replacement |
 
 #### AppArmor vs SELinux
 
